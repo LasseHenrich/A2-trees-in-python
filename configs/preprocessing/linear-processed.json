@@ -1,0 +1,10 @@
+{
+    "dataset": "linear",
+    "output": "linear-processed",
+    "columns": [
+        "x1",
+        "x2"
+    ],
+    "steps": [],
+    "select": []
+}

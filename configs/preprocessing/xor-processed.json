@@ -1,0 +1,10 @@
+{
+    "dataset": "xor",
+    "output": "xor-processed",
+    "columns": [
+        "x1",
+        "x2"
+    ],
+    "steps": [],
+    "select": []
+}

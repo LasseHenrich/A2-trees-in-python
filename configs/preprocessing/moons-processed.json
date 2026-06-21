@@ -1,0 +1,10 @@
+{
+    "dataset": "moons",
+    "output": "moons-processed",
+    "columns": [
+        "x1",
+        "x2"
+    ],
+    "steps": [],
+    "select": []
+}

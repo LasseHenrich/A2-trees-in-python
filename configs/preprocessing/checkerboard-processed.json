@@ -1,0 +1,10 @@
+{
+    "dataset": "checkerboard",
+    "output": "checkerboard-processed",
+    "columns": [
+        "x1",
+        "x2"
+    ],
+    "steps": [],
+    "select": []
+}

@@ -1,0 +1,13 @@
+{
+    "dataset": "circles",
+    "output": "circles-processed",
+    "columns": ["x1", "x2"],
+    "steps": [
+        {
+            "output": "r",
+            "fn": "radius",
+            "inputs": ["x1", "x2"]
+        }
+    ],
+    "select": ["r"]
+}
