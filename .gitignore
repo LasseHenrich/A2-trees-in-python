@@ -4,5 +4,5 @@
 ./src_reference/
 ./src_student_backup/
 ./.reference_mode
-__pycache__/*
+__pycache__
 submission.json

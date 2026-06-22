@@ -9,6 +9,8 @@ DO NOT MODIFY THE FUNCTION SIGNATURES.
 """
 
 from collections.abc import Callable
+from functools import reduce
+import sys
 
 from .impurity import information_gain
 
@@ -61,6 +63,44 @@ def best_split(
             and a string category value for categorical features
         None -- if no split produces strictly positive gain
     """
+    
+    if not X or not y:
+        return None    
+    feat_count = len(X[0])
+    
+    if feature_types is not None and len(feature_types) != feat_count:
+        raise ValueError("feature_types length incorrect")
 
-    # ------ WRITE YOUR CODE HERE ------
-    pass
+    best_gain = 0
+    curr_best_split = None
+    
+    
+    for feat_idx in range(feat_count):
+        feat_type = feature_types[feat_idx] if feature_types is not None else "numeric"
+        
+        feat_column = [x[feat_idx] for x in X]
+        
+        if feat_type == "numeric":
+            thresholds = candidate_thresholds(feat_column)
+            for threshold in thresholds:
+                left = [label for label_idx, label in enumerate(y) if feat_column[label_idx] <= threshold]
+                right = [label for label_idx, label in enumerate(y) if feat_column[label_idx] > threshold]
+                gain = information_gain(y, left, right, criterion)
+                if gain > best_gain:
+                    best_gain = gain
+                    curr_best_split = (feat_idx, threshold, gain)
+
+        elif feat_type == "categorical":
+            unique_vals = list(set(feat_column))
+            for threshold in unique_vals:
+                left = [label for label_idx, label in enumerate(y) if feat_column[label_idx] == threshold]
+                right = [label for label_idx, label in enumerate(y) if feat_column[label_idx] != threshold]
+                gain = information_gain(y, left, right, criterion)
+                if gain > best_gain:
+                    best_gain = gain
+                    curr_best_split = (feat_idx, threshold, gain)
+        else:
+            raise ValueError("feature_types must be a list of either 'numeric' or 'categorical'")
+    
+    return curr_best_split
+    
