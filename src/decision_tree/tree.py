@@ -97,8 +97,13 @@ class DecisionTreeClassifier:
         Returns:
             DecisionTreeClassifier -- self, to allow method chaining
         """
-        # ------ WRITE YOUR CODE HERE ------
-        pass
+
+        if not X or not y or len(X) != len(y):
+            raise ValueError("len(X) == len(y) not satisfied or no data provided")
+        
+        self.root = self._grow(X, y, depth=0)
+        return self
+        
 
     def predict(
         self,
@@ -201,6 +206,48 @@ class DecisionTreeClassifier:
         Returns:
             Node -- root of the subtree grown from (X, y)
         """
+        
+        max_depth_reached = depth == self.max_depth
+        few_samples_remain = len(X) < self.min_samples_split
+        is_node_pure = len(set(y)) <= 1 # all labels are the same
 
-        # ------ WRITE YOUR CODE HERE ------
-        pass
+        if max_depth_reached or few_samples_remain or is_node_pure:
+            return Node(prediction=self._majority(y), n_samples=len(X))
+
+        best_found_split = best_split(X, y, self._impurity, self.feature_types)
+        if best_found_split is None:
+            return Node(prediction=self._majority(y), n_samples=len(X))
+        
+        feat_idx, threshold, gain = best_found_split # type: ignore
+        
+        is_numeric = (self.feature_types is None or self.feature_types[feat_idx] == "numeric")
+        
+        x_left, y_left = [], []
+        x_right, y_right = [], []
+
+        for x, label in zip(X, y):
+            # Check condition depending on type
+            if is_numeric:
+                condition = x[feat_idx] <= threshold
+            else:
+                condition = x[feat_idx] == threshold
+
+            if condition:
+                x_left.append(x)
+                y_left.append(label)
+            else:
+                x_right.append(x)
+                y_right.append(label)
+                
+        node = Node(
+            prediction=None, 
+            n_samples=len(X), 
+            feature=feat_idx,
+            threshold=float(threshold) if is_numeric else None, # threshold cannot be str for some reason
+        )
+        node.left = self._grow(x_left, y_left, depth+1)
+        node.right = self._grow(x_right, y_right, depth+1)
+        
+        return node
+            
+        
