@@ -130,8 +130,12 @@ class DecisionTreeClassifier:
         Returns:
             list[int] -- predicted class label for each sample
         """
-        # ------ WRITE YOUR CODE HERE ------
-        pass
+    
+        # if self.root is None:
+        #     raise RuntimeError("tree has not been fitted yet")
+        
+        return [prediction[0] for prediction in self.predict_with_depth(X, stop_depth, stop_below)]
+        
 
     def predict_with_depth(
         self,
@@ -148,7 +152,11 @@ class DecisionTreeClassifier:
         Accepts the same stop_depth and stop_below arguments as predict.
         """
         # ------ WRITE YOUR CODE HERE ------
-        pass
+        
+        if self.root is None:
+            raise RuntimeError("tree has not been fitted yet")
+        
+        return [self._predict_one(x, self.root, stop_depth, stop_below) for x in X]
 
     @staticmethod
     def _predict_one(
@@ -172,8 +180,36 @@ class DecisionTreeClassifier:
             tuple[int, int] -- (predicted class label, traversal depth)
         """
 
-        # ------ WRITE YOUR CODE HERE ------
-        pass
+        # note that I would do this recursively, but would need a "current_depth" function parameter for this
+
+        traversal_depth = 0
+        current_node = node
+        
+        while not current_node.is_leaf and\
+            (stop_depth is None or traversal_depth < stop_depth) and\
+            (stop_below is None or current_node.n_samples >= stop_below):
+              
+            if current_node.feature is None:
+                raise ValueError("Something not implemented correctly")
+              
+            feat_val = x[current_node.feature]   
+                
+            if current_node.category_value is not None:
+                current_node = current_node.left if feat_val == current_node.category_value else current_node.right
+            elif current_node.threshold is not None:
+                current_node = current_node.left if feat_val <= current_node.threshold else current_node.right
+            else:
+                raise ValueError("Internal node missing split criteria details")
+            
+            traversal_depth += 1
+            
+            if current_node is None: # otherwise we get a linting error
+                break
+            
+        if current_node is None or current_node.prediction is None:
+            raise ValueError("Something went wrong")
+            
+        return (current_node.prediction, traversal_depth)
 
     @staticmethod
     def _majority(y: list[int]) -> int:
@@ -218,7 +254,7 @@ class DecisionTreeClassifier:
         if best_found_split is None:
             return Node(prediction=self._majority(y), n_samples=len(X))
         
-        feat_idx, threshold, gain = best_found_split # type: ignore
+        feat_idx, threshold, _ = best_found_split # type: ignore
         
         is_numeric = (self.feature_types is None or self.feature_types[feat_idx] == "numeric")
         
@@ -240,10 +276,11 @@ class DecisionTreeClassifier:
                 y_right.append(label)
                 
         node = Node(
-            prediction=None, 
+            prediction=self._majority(y), # fallback 
             n_samples=len(X), 
             feature=feat_idx,
-            threshold=float(threshold) if is_numeric else None, # threshold cannot be str for some reason
+            threshold=float(threshold) if is_numeric else None,
+            category_value=str(threshold) if not is_numeric else None,
         )
         node.left = self._grow(x_left, y_left, depth+1)
         node.right = self._grow(x_right, y_right, depth+1)
