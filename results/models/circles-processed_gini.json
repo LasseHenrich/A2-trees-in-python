@@ -1,0 +1,164 @@
+{
+  "dataset": "/home/lasse/pyml/assignments/A2-trees-in-python/data/processed/circles-processed/train.csv",
+  "hyperparams": {
+    "max_depth": null,
+    "min_samples_split": 2,
+    "criterion": "gini",
+    "feature_types": [
+      "numeric"
+    ]
+  },
+  "tree": {
+    "prediction": 0,
+    "n_samples": 800,
+    "feature": 0,
+    "threshold": 0.7289989175692253,
+    "category_value": null,
+    "left": {
+      "prediction": 1,
+      "n_samples": 389,
+      "feature": null,
+      "threshold": null,
+      "category_value": null,
+      "left": null,
+      "right": null
+    },
+    "right": {
+      "prediction": 0,
+      "n_samples": 411,
+      "feature": 0,
+      "threshold": 0.8106359495952701,
+      "category_value": null,
+      "left": {
+        "prediction": 0,
+        "n_samples": 16,
+        "feature": 0,
+        "threshold": 0.8073153263980477,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 15,
+          "feature": 0,
+          "threshold": 0.7928435451005366,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 10,
+            "feature": 0,
+            "threshold": 0.7868179922345171,
+            "category_value": null,
+            "left": {
+              "prediction": 0,
+              "n_samples": 9,
+              "feature": 0,
+              "threshold": 0.745686201330106,
+              "category_value": null,
+              "left": {
+                "prediction": 0,
+                "n_samples": 3,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              },
+              "right": {
+                "prediction": 0,
+                "n_samples": 6,
+                "feature": 0,
+                "threshold": 0.7642968355401598,
+                "category_value": null,
+                "left": {
+                  "prediction": 1,
+                  "n_samples": 3,
+                  "feature": 0,
+                  "threshold": 0.7512685780637453,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 1,
+                    "n_samples": 1,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  },
+                  "right": {
+                    "prediction": 0,
+                    "n_samples": 2,
+                    "feature": 0,
+                    "threshold": 0.7568785930275894,
+                    "category_value": null,
+                    "left": {
+                      "prediction": 0,
+                      "n_samples": 1,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    },
+                    "right": {
+                      "prediction": 1,
+                      "n_samples": 1,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    }
+                  }
+                },
+                "right": {
+                  "prediction": 0,
+                  "n_samples": 3,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                }
+              }
+            },
+            "right": {
+              "prediction": 1,
+              "n_samples": 1,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          },
+          "right": {
+            "prediction": 0,
+            "n_samples": 5,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          }
+        },
+        "right": {
+          "prediction": 1,
+          "n_samples": 1,
+          "feature": null,
+          "threshold": null,
+          "category_value": null,
+          "left": null,
+          "right": null
+        }
+      },
+      "right": {
+        "prediction": 0,
+        "n_samples": 395,
+        "feature": null,
+        "threshold": null,
+        "category_value": null,
+        "left": null,
+        "right": null
+      }
+    }
+  }
+}

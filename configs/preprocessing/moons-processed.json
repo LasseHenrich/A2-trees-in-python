@@ -5,6 +5,10 @@
         "x1",
         "x2"
     ],
-    "steps": [],
-    "select": []
+    "steps": [
+        { "output": "shifted_x1", "fn": "shift", "inputs": ["x1"], "scalar": 0.5 },
+        { "output": "angle", "fn": "angle", "inputs": ["shifted_x1", "x2"] },
+        { "output": "radius", "fn": "radius", "inputs": ["x1", "x2"] }
+    ],
+    "select": ["angle", "radius"]
 }

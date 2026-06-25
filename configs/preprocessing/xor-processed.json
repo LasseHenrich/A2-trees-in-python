@@ -5,6 +5,8 @@
         "x1",
         "x2"
     ],
-    "steps": [],
-    "select": []
+    "steps": [
+        { "output": "product", "fn": "product", "inputs": ["x1", "x2"] }
+    ],
+    "select": ["product"]
 }

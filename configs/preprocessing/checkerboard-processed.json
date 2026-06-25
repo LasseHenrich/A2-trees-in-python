@@ -5,6 +5,12 @@
         "x1",
         "x2"
     ],
-    "steps": [],
-    "select": []
+    "steps": [
+        { "output": "scaled_x1", "fn": "scale", "inputs": ["x1"], "scalar": 3.141 },
+        { "output": "scaled_x2", "fn": "scale", "inputs": ["x2"], "scalar": 3.141 },
+        { "output": "sin_x1", "fn": "sin", "inputs": ["scaled_x1"] },
+        { "output": "sin_x2", "fn": "sin", "inputs": ["scaled_x2"] },
+        { "output": "product", "fn": "product", "inputs": ["sin_x1", "sin_x2"] }
+    ],
+    "select": ["product"]
 }

@@ -1,0 +1,996 @@
+{
+  "dataset": "/home/lasse/pyml/assignments/A2-trees-in-python/data/processed/xor-processed/train.csv",
+  "hyperparams": {
+    "max_depth": null,
+    "min_samples_split": 2,
+    "criterion": "gini",
+    "feature_types": [
+      "numeric"
+    ]
+  },
+  "tree": {
+    "prediction": 1,
+    "n_samples": 800,
+    "feature": 0,
+    "threshold": 0.0005870852739089564,
+    "category_value": null,
+    "left": {
+      "prediction": 1,
+      "n_samples": 415,
+      "feature": 0,
+      "threshold": -0.043032964468973416,
+      "category_value": null,
+      "left": {
+        "prediction": 1,
+        "n_samples": 345,
+        "feature": 0,
+        "threshold": -0.09311664842879483,
+        "category_value": null,
+        "left": {
+          "prediction": 1,
+          "n_samples": 287,
+          "feature": null,
+          "threshold": null,
+          "category_value": null,
+          "left": null,
+          "right": null
+        },
+        "right": {
+          "prediction": 1,
+          "n_samples": 58,
+          "feature": 0,
+          "threshold": -0.09236732092647547,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 1,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          },
+          "right": {
+            "prediction": 1,
+            "n_samples": 57,
+            "feature": 0,
+            "threshold": -0.08838910146536975,
+            "category_value": null,
+            "left": {
+              "prediction": 1,
+              "n_samples": 3,
+              "feature": 0,
+              "threshold": -0.09038982929618652,
+              "category_value": null,
+              "left": {
+                "prediction": 1,
+                "n_samples": 2,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              },
+              "right": {
+                "prediction": 0,
+                "n_samples": 1,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              }
+            },
+            "right": {
+              "prediction": 1,
+              "n_samples": 54,
+              "feature": 0,
+              "threshold": -0.05441285398054797,
+              "category_value": null,
+              "left": {
+                "prediction": 1,
+                "n_samples": 36,
+                "feature": 0,
+                "threshold": -0.054613292183657014,
+                "category_value": null,
+                "left": {
+                  "prediction": 1,
+                  "n_samples": 35,
+                  "feature": 0,
+                  "threshold": -0.06683082766687536,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 1,
+                    "n_samples": 17,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  },
+                  "right": {
+                    "prediction": 1,
+                    "n_samples": 18,
+                    "feature": 0,
+                    "threshold": -0.06630684385134193,
+                    "category_value": null,
+                    "left": {
+                      "prediction": 0,
+                      "n_samples": 1,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    },
+                    "right": {
+                      "prediction": 1,
+                      "n_samples": 17,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    }
+                  }
+                },
+                "right": {
+                  "prediction": 0,
+                  "n_samples": 1,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                }
+              },
+              "right": {
+                "prediction": 1,
+                "n_samples": 18,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "prediction": 1,
+        "n_samples": 70,
+        "feature": 0,
+        "threshold": -0.040712710926672335,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 2,
+          "feature": null,
+          "threshold": null,
+          "category_value": null,
+          "left": null,
+          "right": null
+        },
+        "right": {
+          "prediction": 1,
+          "n_samples": 68,
+          "feature": 0,
+          "threshold": -0.009689362248078037,
+          "category_value": null,
+          "left": {
+            "prediction": 1,
+            "n_samples": 49,
+            "feature": 0,
+            "threshold": -0.017462897895576993,
+            "category_value": null,
+            "left": {
+              "prediction": 1,
+              "n_samples": 34,
+              "feature": 0,
+              "threshold": -0.022244190118448463,
+              "category_value": null,
+              "left": {
+                "prediction": 1,
+                "n_samples": 24,
+                "feature": 0,
+                "threshold": -0.0288802796590688,
+                "category_value": null,
+                "left": {
+                  "prediction": 1,
+                  "n_samples": 18,
+                  "feature": 0,
+                  "threshold": -0.029787505722283954,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 1,
+                    "n_samples": 17,
+                    "feature": 0,
+                    "threshold": -0.034653495249449294,
+                    "category_value": null,
+                    "left": {
+                      "prediction": 1,
+                      "n_samples": 9,
+                      "feature": 0,
+                      "threshold": -0.03558993557971572,
+                      "category_value": null,
+                      "left": {
+                        "prediction": 1,
+                        "n_samples": 7,
+                        "feature": 0,
+                        "threshold": -0.03835391635370876,
+                        "category_value": null,
+                        "left": {
+                          "prediction": 0,
+                          "n_samples": 2,
+                          "feature": 0,
+                          "threshold": -0.03980413496714502,
+                          "category_value": null,
+                          "left": {
+                            "prediction": 1,
+                            "n_samples": 1,
+                            "feature": null,
+                            "threshold": null,
+                            "category_value": null,
+                            "left": null,
+                            "right": null
+                          },
+                          "right": {
+                            "prediction": 0,
+                            "n_samples": 1,
+                            "feature": null,
+                            "threshold": null,
+                            "category_value": null,
+                            "left": null,
+                            "right": null
+                          }
+                        },
+                        "right": {
+                          "prediction": 1,
+                          "n_samples": 5,
+                          "feature": null,
+                          "threshold": null,
+                          "category_value": null,
+                          "left": null,
+                          "right": null
+                        }
+                      },
+                      "right": {
+                        "prediction": 0,
+                        "n_samples": 2,
+                        "feature": null,
+                        "threshold": null,
+                        "category_value": null,
+                        "left": null,
+                        "right": null
+                      }
+                    },
+                    "right": {
+                      "prediction": 1,
+                      "n_samples": 8,
+                      "feature": 0,
+                      "threshold": -0.030328780770393575,
+                      "category_value": null,
+                      "left": {
+                        "prediction": 1,
+                        "n_samples": 6,
+                        "feature": null,
+                        "threshold": null,
+                        "category_value": null,
+                        "left": null,
+                        "right": null
+                      },
+                      "right": {
+                        "prediction": 0,
+                        "n_samples": 2,
+                        "feature": 0,
+                        "threshold": -0.030166974565831096,
+                        "category_value": null,
+                        "left": {
+                          "prediction": 0,
+                          "n_samples": 1,
+                          "feature": null,
+                          "threshold": null,
+                          "category_value": null,
+                          "left": null,
+                          "right": null
+                        },
+                        "right": {
+                          "prediction": 1,
+                          "n_samples": 1,
+                          "feature": null,
+                          "threshold": null,
+                          "category_value": null,
+                          "left": null,
+                          "right": null
+                        }
+                      }
+                    }
+                  },
+                  "right": {
+                    "prediction": 0,
+                    "n_samples": 1,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  }
+                },
+                "right": {
+                  "prediction": 1,
+                  "n_samples": 6,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                }
+              },
+              "right": {
+                "prediction": 0,
+                "n_samples": 10,
+                "feature": 0,
+                "threshold": -0.019711892937349144,
+                "category_value": null,
+                "left": {
+                  "prediction": 0,
+                  "n_samples": 5,
+                  "feature": 0,
+                  "threshold": -0.020301550995968684,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 0,
+                    "n_samples": 2,
+                    "feature": 0,
+                    "threshold": -0.021347254479192806,
+                    "category_value": null,
+                    "left": {
+                      "prediction": 0,
+                      "n_samples": 1,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    },
+                    "right": {
+                      "prediction": 1,
+                      "n_samples": 1,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    }
+                  },
+                  "right": {
+                    "prediction": 0,
+                    "n_samples": 3,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  }
+                },
+                "right": {
+                  "prediction": 1,
+                  "n_samples": 5,
+                  "feature": 0,
+                  "threshold": -0.018396157496240222,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 1,
+                    "n_samples": 3,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  },
+                  "right": {
+                    "prediction": 0,
+                    "n_samples": 2,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  }
+                }
+              }
+            },
+            "right": {
+              "prediction": 1,
+              "n_samples": 15,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          },
+          "right": {
+            "prediction": 1,
+            "n_samples": 19,
+            "feature": 0,
+            "threshold": -0.007727072628741173,
+            "category_value": null,
+            "left": {
+              "prediction": 0,
+              "n_samples": 3,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            },
+            "right": {
+              "prediction": 1,
+              "n_samples": 16,
+              "feature": 0,
+              "threshold": -0.004334158457264416,
+              "category_value": null,
+              "left": {
+                "prediction": 1,
+                "n_samples": 6,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              },
+              "right": {
+                "prediction": 1,
+                "n_samples": 10,
+                "feature": 0,
+                "threshold": -0.003859806215090921,
+                "category_value": null,
+                "left": {
+                  "prediction": 0,
+                  "n_samples": 1,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                },
+                "right": {
+                  "prediction": 1,
+                  "n_samples": 9,
+                  "feature": 0,
+                  "threshold": -0.0020793935106297465,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 1,
+                    "n_samples": 2,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  },
+                  "right": {
+                    "prediction": 1,
+                    "n_samples": 7,
+                    "feature": 0,
+                    "threshold": -0.0003055700965905186,
+                    "category_value": null,
+                    "left": {
+                      "prediction": 0,
+                      "n_samples": 5,
+                      "feature": 0,
+                      "threshold": -0.0007328886653701916,
+                      "category_value": null,
+                      "left": {
+                        "prediction": 1,
+                        "n_samples": 3,
+                        "feature": 0,
+                        "threshold": -0.001659765738978754,
+                        "category_value": null,
+                        "left": {
+                          "prediction": 0,
+                          "n_samples": 1,
+                          "feature": null,
+                          "threshold": null,
+                          "category_value": null,
+                          "left": null,
+                          "right": null
+                        },
+                        "right": {
+                          "prediction": 1,
+                          "n_samples": 2,
+                          "feature": null,
+                          "threshold": null,
+                          "category_value": null,
+                          "left": null,
+                          "right": null
+                        }
+                      },
+                      "right": {
+                        "prediction": 0,
+                        "n_samples": 2,
+                        "feature": null,
+                        "threshold": null,
+                        "category_value": null,
+                        "left": null,
+                        "right": null
+                      }
+                    },
+                    "right": {
+                      "prediction": 1,
+                      "n_samples": 2,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "prediction": 0,
+      "n_samples": 385,
+      "feature": 0,
+      "threshold": 0.03843444119960616,
+      "category_value": null,
+      "left": {
+        "prediction": 0,
+        "n_samples": 51,
+        "feature": 0,
+        "threshold": 0.03559738321953195,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 49,
+          "feature": 0,
+          "threshold": 0.028727457308779156,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 39,
+            "feature": 0,
+            "threshold": 0.028115748425372185,
+            "category_value": null,
+            "left": {
+              "prediction": 0,
+              "n_samples": 38,
+              "feature": 0,
+              "threshold": 0.025170138152980873,
+              "category_value": null,
+              "left": {
+                "prediction": 0,
+                "n_samples": 34,
+                "feature": 0,
+                "threshold": 0.009249076995372396,
+                "category_value": null,
+                "left": {
+                  "prediction": 0,
+                  "n_samples": 17,
+                  "feature": 0,
+                  "threshold": 0.004076124277007647,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 0,
+                    "n_samples": 10,
+                    "feature": 0,
+                    "threshold": 0.002879996367796952,
+                    "category_value": null,
+                    "left": {
+                      "prediction": 0,
+                      "n_samples": 8,
+                      "feature": 0,
+                      "threshold": 0.0018230114015169172,
+                      "category_value": null,
+                      "left": {
+                        "prediction": 0,
+                        "n_samples": 3,
+                        "feature": null,
+                        "threshold": null,
+                        "category_value": null,
+                        "left": null,
+                        "right": null
+                      },
+                      "right": {
+                        "prediction": 0,
+                        "n_samples": 5,
+                        "feature": 0,
+                        "threshold": 0.002003348859133792,
+                        "category_value": null,
+                        "left": {
+                          "prediction": 1,
+                          "n_samples": 1,
+                          "feature": null,
+                          "threshold": null,
+                          "category_value": null,
+                          "left": null,
+                          "right": null
+                        },
+                        "right": {
+                          "prediction": 0,
+                          "n_samples": 4,
+                          "feature": 0,
+                          "threshold": 0.002158968329177552,
+                          "category_value": null,
+                          "left": {
+                            "prediction": 0,
+                            "n_samples": 2,
+                            "feature": null,
+                            "threshold": null,
+                            "category_value": null,
+                            "left": null,
+                            "right": null
+                          },
+                          "right": {
+                            "prediction": 0,
+                            "n_samples": 2,
+                            "feature": 0,
+                            "threshold": 0.0022884161696916415,
+                            "category_value": null,
+                            "left": {
+                              "prediction": 1,
+                              "n_samples": 1,
+                              "feature": null,
+                              "threshold": null,
+                              "category_value": null,
+                              "left": null,
+                              "right": null
+                            },
+                            "right": {
+                              "prediction": 0,
+                              "n_samples": 1,
+                              "feature": null,
+                              "threshold": null,
+                              "category_value": null,
+                              "left": null,
+                              "right": null
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "right": {
+                      "prediction": 1,
+                      "n_samples": 2,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    }
+                  },
+                  "right": {
+                    "prediction": 0,
+                    "n_samples": 7,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  }
+                },
+                "right": {
+                  "prediction": 0,
+                  "n_samples": 17,
+                  "feature": 0,
+                  "threshold": 0.009944531974127178,
+                  "category_value": null,
+                  "left": {
+                    "prediction": 1,
+                    "n_samples": 2,
+                    "feature": null,
+                    "threshold": null,
+                    "category_value": null,
+                    "left": null,
+                    "right": null
+                  },
+                  "right": {
+                    "prediction": 0,
+                    "n_samples": 15,
+                    "feature": 0,
+                    "threshold": 0.02360785666667653,
+                    "category_value": null,
+                    "left": {
+                      "prediction": 0,
+                      "n_samples": 14,
+                      "feature": 0,
+                      "threshold": 0.019604106215100014,
+                      "category_value": null,
+                      "left": {
+                        "prediction": 0,
+                        "n_samples": 11,
+                        "feature": 0,
+                        "threshold": 0.018228396599660107,
+                        "category_value": null,
+                        "left": {
+                          "prediction": 0,
+                          "n_samples": 8,
+                          "feature": 0,
+                          "threshold": 0.013887601913930885,
+                          "category_value": null,
+                          "left": {
+                            "prediction": 0,
+                            "n_samples": 5,
+                            "feature": 0,
+                            "threshold": 0.010254633984771708,
+                            "category_value": null,
+                            "left": {
+                              "prediction": 0,
+                              "n_samples": 2,
+                              "feature": null,
+                              "threshold": null,
+                              "category_value": null,
+                              "left": null,
+                              "right": null
+                            },
+                            "right": {
+                              "prediction": 1,
+                              "n_samples": 3,
+                              "feature": 0,
+                              "threshold": 0.011402399027372502,
+                              "category_value": null,
+                              "left": {
+                                "prediction": 1,
+                                "n_samples": 1,
+                                "feature": null,
+                                "threshold": null,
+                                "category_value": null,
+                                "left": null,
+                                "right": null
+                              },
+                              "right": {
+                                "prediction": 0,
+                                "n_samples": 2,
+                                "feature": 0,
+                                "threshold": 0.013109202270513511,
+                                "category_value": null,
+                                "left": {
+                                  "prediction": 0,
+                                  "n_samples": 1,
+                                  "feature": null,
+                                  "threshold": null,
+                                  "category_value": null,
+                                  "left": null,
+                                  "right": null
+                                },
+                                "right": {
+                                  "prediction": 1,
+                                  "n_samples": 1,
+                                  "feature": null,
+                                  "threshold": null,
+                                  "category_value": null,
+                                  "left": null,
+                                  "right": null
+                                }
+                              }
+                            }
+                          },
+                          "right": {
+                            "prediction": 0,
+                            "n_samples": 3,
+                            "feature": null,
+                            "threshold": null,
+                            "category_value": null,
+                            "left": null,
+                            "right": null
+                          }
+                        },
+                        "right": {
+                          "prediction": 1,
+                          "n_samples": 3,
+                          "feature": null,
+                          "threshold": null,
+                          "category_value": null,
+                          "left": null,
+                          "right": null
+                        }
+                      },
+                      "right": {
+                        "prediction": 0,
+                        "n_samples": 3,
+                        "feature": null,
+                        "threshold": null,
+                        "category_value": null,
+                        "left": null,
+                        "right": null
+                      }
+                    },
+                    "right": {
+                      "prediction": 1,
+                      "n_samples": 1,
+                      "feature": null,
+                      "threshold": null,
+                      "category_value": null,
+                      "left": null,
+                      "right": null
+                    }
+                  }
+                }
+              },
+              "right": {
+                "prediction": 0,
+                "n_samples": 4,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              }
+            },
+            "right": {
+              "prediction": 1,
+              "n_samples": 1,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          },
+          "right": {
+            "prediction": 0,
+            "n_samples": 10,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          }
+        },
+        "right": {
+          "prediction": 1,
+          "n_samples": 2,
+          "feature": null,
+          "threshold": null,
+          "category_value": null,
+          "left": null,
+          "right": null
+        }
+      },
+      "right": {
+        "prediction": 0,
+        "n_samples": 334,
+        "feature": 0,
+        "threshold": 0.07350922465642068,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 40,
+          "feature": 0,
+          "threshold": 0.07286683836174905,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 39,
+            "feature": 0,
+            "threshold": 0.0662536578748012,
+            "category_value": null,
+            "left": {
+              "prediction": 0,
+              "n_samples": 35,
+              "feature": 0,
+              "threshold": 0.049977006319467054,
+              "category_value": null,
+              "left": {
+                "prediction": 0,
+                "n_samples": 18,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              },
+              "right": {
+                "prediction": 0,
+                "n_samples": 17,
+                "feature": 0,
+                "threshold": 0.050759429006703397,
+                "category_value": null,
+                "left": {
+                  "prediction": 1,
+                  "n_samples": 1,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                },
+                "right": {
+                  "prediction": 0,
+                  "n_samples": 16,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                }
+              }
+            },
+            "right": {
+              "prediction": 0,
+              "n_samples": 4,
+              "feature": 0,
+              "threshold": 0.06702270125623636,
+              "category_value": null,
+              "left": {
+                "prediction": 1,
+                "n_samples": 1,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              },
+              "right": {
+                "prediction": 0,
+                "n_samples": 3,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              }
+            }
+          },
+          "right": {
+            "prediction": 1,
+            "n_samples": 1,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          }
+        },
+        "right": {
+          "prediction": 0,
+          "n_samples": 294,
+          "feature": 0,
+          "threshold": 0.167339083916497,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 82,
+            "feature": 0,
+            "threshold": 0.16630374213436694,
+            "category_value": null,
+            "left": {
+              "prediction": 0,
+              "n_samples": 81,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            },
+            "right": {
+              "prediction": 1,
+              "n_samples": 1,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          },
+          "right": {
+            "prediction": 0,
+            "n_samples": 212,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          }
+        }
+      }
+    }
+  }
+}

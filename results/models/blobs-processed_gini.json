@@ -1,0 +1,53 @@
+{
+  "dataset": "/home/lasse/pyml/assignments/A2-trees-in-python/data/processed/blobs-processed/train.csv",
+  "hyperparams": {
+    "max_depth": null,
+    "min_samples_split": 2,
+    "criterion": "gini",
+    "feature_types": [
+      "numeric",
+      "numeric"
+    ]
+  },
+  "tree": {
+    "prediction": 1,
+    "n_samples": 800,
+    "feature": 1,
+    "threshold": 0.11492104669456116,
+    "category_value": null,
+    "left": {
+      "prediction": 1,
+      "n_samples": 533,
+      "feature": 0,
+      "threshold": -0.17738753839527355,
+      "category_value": null,
+      "left": {
+        "prediction": 0,
+        "n_samples": 266,
+        "feature": null,
+        "threshold": null,
+        "category_value": null,
+        "left": null,
+        "right": null
+      },
+      "right": {
+        "prediction": 1,
+        "n_samples": 267,
+        "feature": null,
+        "threshold": null,
+        "category_value": null,
+        "left": null,
+        "right": null
+      }
+    },
+    "right": {
+      "prediction": 2,
+      "n_samples": 267,
+      "feature": null,
+      "threshold": null,
+      "category_value": null,
+      "left": null,
+      "right": null
+    }
+  }
+}

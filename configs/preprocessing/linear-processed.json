@@ -5,6 +5,9 @@
         "x1",
         "x2"
     ],
-    "steps": [],
-    "select": []
+    "steps": [
+        { "output": "angle", "fn": "angle", "inputs": ["x1", "x2"] },
+        { "output": "rotated", "fn": "rotate_x", "inputs": ["x1", "x2"], "angle": 45 }
+    ],
+    "select": [ "rotated"]
 }

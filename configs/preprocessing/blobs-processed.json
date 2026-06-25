@@ -6,5 +6,5 @@
         "x2"
     ],
     "steps": [],
-    "select": []
+    "select": ["x1", "x2"]
 }
