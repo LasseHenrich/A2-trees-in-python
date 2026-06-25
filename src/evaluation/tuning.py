@@ -40,11 +40,11 @@ def stopping_search(
             "avg_pred_depth":   float,
         }
     """
-
-    # ------ WRITE YOUR CODE HERE ------
+    
     pass
-
-
+    
+    
+    
 def grid_search(
     X_train: list[list],
     y_train: list,
@@ -81,6 +81,5 @@ def grid_search(
             "confusion_matrix": list[list[int]],
         }
     """
-
-    # ------ WRITE YOUR CODE HERE ------
+    
     pass

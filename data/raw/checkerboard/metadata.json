@@ -1,0 +1,11 @@
+{
+  "n_train": 800,
+  "n_test": 200,
+  "args": {
+    "n": 1000,
+    "seed": 42,
+    "train_split": 0.8,
+    "grid": 4,
+    "noise": 0.05
+  }
+}

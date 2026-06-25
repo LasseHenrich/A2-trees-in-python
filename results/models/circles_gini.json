@@ -1,0 +1,325 @@
+{
+  "dataset": "/home/lasse/pyml/assignments/A2-trees-in-python/data/raw/circles/train.csv",
+  "hyperparams": {
+    "max_depth": null,
+    "min_samples_split": 2,
+    "criterion": "gini",
+    "feature_types": [
+      "numeric",
+      "numeric"
+    ]
+  },
+  "tree": {
+    "prediction": 0,
+    "n_samples": 800,
+    "feature": 0,
+    "threshold": 0.6237886386668428,
+    "category_value": null,
+    "left": {
+      "prediction": 1,
+      "n_samples": 677,
+      "feature": 0,
+      "threshold": -0.6412622782647164,
+      "category_value": null,
+      "left": {
+        "prediction": 0,
+        "n_samples": 116,
+        "feature": 0,
+        "threshold": -0.6840235965979883,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 105,
+          "feature": 0,
+          "threshold": -0.7877716741925637,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 85,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          },
+          "right": {
+            "prediction": 0,
+            "n_samples": 20,
+            "feature": 0,
+            "threshold": -0.7787043160993568,
+            "category_value": null,
+            "left": {
+              "prediction": 1,
+              "n_samples": 1,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            },
+            "right": {
+              "prediction": 0,
+              "n_samples": 19,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          }
+        },
+        "right": {
+          "prediction": 0,
+          "n_samples": 11,
+          "feature": 0,
+          "threshold": -0.6811601345098703,
+          "category_value": null,
+          "left": {
+            "prediction": 1,
+            "n_samples": 1,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          },
+          "right": {
+            "prediction": 0,
+            "n_samples": 10,
+            "feature": 0,
+            "threshold": -0.6707907458297869,
+            "category_value": null,
+            "left": {
+              "prediction": 0,
+              "n_samples": 3,
+              "feature": 0,
+              "threshold": -0.6731692331908959,
+              "category_value": null,
+              "left": {
+                "prediction": 0,
+                "n_samples": 2,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              },
+              "right": {
+                "prediction": 1,
+                "n_samples": 1,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              }
+            },
+            "right": {
+              "prediction": 0,
+              "n_samples": 7,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          }
+        }
+      },
+      "right": {
+        "prediction": 1,
+        "n_samples": 561,
+        "feature": 1,
+        "threshold": -0.6813821995627094,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 88,
+          "feature": null,
+          "threshold": null,
+          "category_value": null,
+          "left": null,
+          "right": null
+        },
+        "right": {
+          "prediction": 1,
+          "n_samples": 473,
+          "feature": 1,
+          "threshold": 0.6811502961504616,
+          "category_value": null,
+          "left": {
+            "prediction": 1,
+            "n_samples": 389,
+            "feature": 0,
+            "threshold": -0.5660563976161486,
+            "category_value": null,
+            "left": {
+              "prediction": 1,
+              "n_samples": 17,
+              "feature": 0,
+              "threshold": -0.575065608421444,
+              "category_value": null,
+              "left": {
+                "prediction": 1,
+                "n_samples": 16,
+                "feature": 1,
+                "threshold": 0.4230767381199014,
+                "category_value": null,
+                "left": {
+                  "prediction": 1,
+                  "n_samples": 15,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                },
+                "right": {
+                  "prediction": 0,
+                  "n_samples": 1,
+                  "feature": null,
+                  "threshold": null,
+                  "category_value": null,
+                  "left": null,
+                  "right": null
+                }
+              },
+              "right": {
+                "prediction": 0,
+                "n_samples": 1,
+                "feature": null,
+                "threshold": null,
+                "category_value": null,
+                "left": null,
+                "right": null
+              }
+            },
+            "right": {
+              "prediction": 1,
+              "n_samples": 372,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          },
+          "right": {
+            "prediction": 0,
+            "n_samples": 84,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          }
+        }
+      }
+    },
+    "right": {
+      "prediction": 0,
+      "n_samples": 123,
+      "feature": 0,
+      "threshold": 0.6914527267849795,
+      "category_value": null,
+      "left": {
+        "prediction": 0,
+        "n_samples": 10,
+        "feature": 0,
+        "threshold": 0.6908161224373032,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 9,
+          "feature": 1,
+          "threshold": -0.16490849280907738,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 6,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          },
+          "right": {
+            "prediction": 0,
+            "n_samples": 3,
+            "feature": 1,
+            "threshold": 0.256524634265986,
+            "category_value": null,
+            "left": {
+              "prediction": 1,
+              "n_samples": 1,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            },
+            "right": {
+              "prediction": 0,
+              "n_samples": 2,
+              "feature": null,
+              "threshold": null,
+              "category_value": null,
+              "left": null,
+              "right": null
+            }
+          }
+        },
+        "right": {
+          "prediction": 1,
+          "n_samples": 1,
+          "feature": null,
+          "threshold": null,
+          "category_value": null,
+          "left": null,
+          "right": null
+        }
+      },
+      "right": {
+        "prediction": 0,
+        "n_samples": 113,
+        "feature": 0,
+        "threshold": 0.7567744992479682,
+        "category_value": null,
+        "left": {
+          "prediction": 0,
+          "n_samples": 17,
+          "feature": 0,
+          "threshold": 0.752138008172722,
+          "category_value": null,
+          "left": {
+            "prediction": 0,
+            "n_samples": 16,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          },
+          "right": {
+            "prediction": 1,
+            "n_samples": 1,
+            "feature": null,
+            "threshold": null,
+            "category_value": null,
+            "left": null,
+            "right": null
+          }
+        },
+        "right": {
+          "prediction": 0,
+          "n_samples": 96,
+          "feature": null,
+          "threshold": null,
+          "category_value": null,
+          "left": null,
+          "right": null
+        }
+      }
+    }
+  }
+}
